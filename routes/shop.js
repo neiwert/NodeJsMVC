@@ -1,18 +1,13 @@
 // useless at the moment
 // const path = require('path');
 // const rootDir = require('../util/path');
+const shopController = require('../controllers/shopController.js');
 
 const express = require('express');
-const products = require('../controllers/adminController').products;
 const router = express.Router();
 
-// default route
-router.get('/', (req, res) => {
-  res.render('shop', {
-    prods: products,
-    pageTitle: 'Shop',
-    path: '/shop/',
-  });
-});
+// /shop/ => GET
+  // default route
+  router.get('/', shopController.shopRoot_Page);
 
 module.exports = router;

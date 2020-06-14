@@ -7,10 +7,10 @@ const adminController = require('../controllers/adminController.js');
 
 const router = express.Router();
 
-// /admin/add-product => GET
+// /admin/ => GET
 router.get('/add-product', adminController.AddProd_Page);
 
-// /admin/add-product => POST
+// /admin/ => POST
 router.post('/add-product',adminController.AddProd_Mod);
 
 // default route
