@@ -10,4 +10,4 @@ const router = express.Router();
   // default route
   router.get('/', shopController.shopRoot_Page);
 
-module.exports = router;
+  exports.routes = router;

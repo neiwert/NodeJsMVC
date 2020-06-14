@@ -11,7 +11,7 @@ const router = express.Router();
 router.get('/add-product', adminController.AddProd_Page);
 
 // /admin/ => POST
-router.post('/add-product',adminController.AddProd_Mod);
+router.post('/add-product', adminController.AddProd_Mod);
 
 // default route
 router.get('/', (req, res) => {
